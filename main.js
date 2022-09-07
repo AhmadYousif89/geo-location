@@ -133,6 +133,8 @@ const getMyGeoLocation = () => {
 		const {longitude, latitude} = pos.coords;
 		getByCoords(latitude, longitude);
 	});
+	const countryInputs = getHTMLElement('.country__input', true);
+	countryInputs.forEach(input => removeInvalidClass(input));
 };
 
 const getNeighbourCountry = async e => {
