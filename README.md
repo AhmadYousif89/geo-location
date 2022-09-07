@@ -14,7 +14,7 @@
 
 - Some countries have their coords shortend , e.g [ lat: 12.1 ] | [ lng: -77.0 ] , if you try to search coords with these info you might get ERROR [ Found NO Country! ] , in this case you can simply add some digits to the coords , e.g [ lat: 12.1461 ] | [ lng: -77.0546 ] and it should work fine.
 
-- Geocode API is NOT 100% accurate , some coords will point to the wrong country sometimes and sometimes will not return any country ☹
+- Geocode API is NOT 100% accurate , some coords will point to the wrong country and sometimes will not return any country ☹
 
 #### HAVE FUN :)
 
