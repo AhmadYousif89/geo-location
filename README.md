@@ -16,5 +16,5 @@
 
 #### HAVE FUN :)
 
-- (Find Geo-Location)[https://geo-location-beta.vercel.app/]
+- (https://geo-location-beta.vercel.app/)[Find Geo-Location]
 - If you like this project give it a ⭐, thank you.
