@@ -2,9 +2,6 @@ export const AUTH_CODE = import.meta.env.VITE_AUTH_CODE;
 
 export const getHTMLElement = selector => document.querySelector(selector);
 
-export const renderError = msg =>
-	(countriesContainer.innerHTML = `<span class='errMsg'>${msg}</span>`);
-
 export const removeInvalidClass = element => element.classList.remove('invalid');
 
 export const addInvalidClass = element => element.classList.add('invalid');

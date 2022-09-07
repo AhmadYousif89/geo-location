@@ -1,17 +1,11 @@
-import {
-	AUTH_CODE,
-	addInvalidClass,
-	getHTMLElement,
-	getJSON,
-	removeInvalidClass,
-	renderError,
-} from './helpers';
+import {AUTH_CODE, addInvalidClass, getHTMLElement, getJSON, removeInvalidClass} from './helpers';
 
 const countriesContainer = getHTMLElement('.countries');
 const countryBtn = getHTMLElement('#btn-country');
 const coordsBtn = getHTMLElement('#btn-coords');
 const myGeoBtn = getHTMLElement('#btn-geo');
 
+const renderError = msg => (countriesContainer.innerHTML = `<span class='errMsg'>${msg}</span>`);
 const updateUI = () => {
 	const html = '<h2>Loading...</h2>';
 	countriesContainer.innerHTML = html;
