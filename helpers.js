@@ -1,6 +1,9 @@
 export const AUTH_CODE = import.meta.env.VITE_AUTH_CODE;
 
-export const getHTMLElement = selector => document.querySelector(selector);
+export const getHTMLElement = (selector, isMulti = false) => {
+	if (isMulti) return document.querySelectorAll(selector);
+	return document.querySelector(selector);
+};
 
 export const removeInvalidClass = element => element.classList.remove('invalid');
 
