@@ -221,24 +221,34 @@ p {
 	color: #333;
 }
 
-.images {
-	display: flex;
-}
-
-.images img {
-	display: block;
-	width: 80rem;
-	margin: 4rem;
-}
-
-.images img.parallel {
-	width: 40rem;
-	margin: 2rem;
-	border: 3rem solid white;
-	box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
 .errMsg {
 	color: red;
 	margin-block: 2rem;
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 55%;
+	}
+	.btn {
+		padding: 2rem 3rem;
+	}
+}
+
+@media (max-width: 800px) {
+	html {
+		font-size: 50%;
+	}
+	.btn {
+		font-size: 1.75rem;
+		padding: 1rem 1.5rem;
+	}
+}
+@media (max-width: 400px) {
+	html {
+		font-size: 45%;
+	}
+	.btn {
+		font-size: 1.5rem;
+	}
 }
